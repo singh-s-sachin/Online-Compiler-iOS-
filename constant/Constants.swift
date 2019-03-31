@@ -7,3 +7,7 @@
 //
 
 import Foundation
+let run = "https://run.glot.io/languages/"
+let Head = "application/json; charset=utf-8"
+let header = "Content-type: application/json"
+let snippet = "https://run.glot.io/snippets"

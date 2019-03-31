@@ -12,6 +12,13 @@
 		43B24A13224BFD6200C532A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43B24A11224BFD6200C532A9 /* Main.storyboard */; };
 		43B24A15224BFD6700C532A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43B24A14224BFD6700C532A9 /* Assets.xcassets */; };
 		43B24A18224BFD6700C532A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43B24A16224BFD6700C532A9 /* LaunchScreen.storyboard */; };
+		43B24A20224BFFEE00C532A9 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B24A1F224BFFEE00C532A9 /* GradientView.swift */; };
+		43B24A23224C005200C532A9 /* CodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B24A22224C005200C532A9 /* CodeVC.swift */; };
+		43B24A25224C2CC100C532A9 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B24A24224C2CC100C532A9 /* RoundedButton.swift */; };
+		43B24A27224C30DF00C532A9 /* roundtextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B24A26224C30DF00C532A9 /* roundtextView.swift */; };
+		43B24A29224C41DD00C532A9 /* outputvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B24A28224C41DD00C532A9 /* outputvc.swift */; };
+		43B24A2C224C4DF200C532A9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B24A2B224C4DF200C532A9 /* Constants.swift */; };
+		C49F473D94403E37DBB0F933 /* Pods_CodeX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6155EF8979534295B12AFB20 /* Pods_CodeX.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,15 @@
 		43B24A14224BFD6700C532A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43B24A17224BFD6700C532A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43B24A19224BFD6700C532A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43B24A1F224BFFEE00C532A9 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradientView.swift; path = ../../Dean/View/GradientView.swift; sourceTree = "<group>"; };
+		43B24A22224C005200C532A9 /* CodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeVC.swift; sourceTree = "<group>"; };
+		43B24A24224C2CC100C532A9 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundedButton.swift; path = ../../Dean/View/RoundedButton.swift; sourceTree = "<group>"; };
+		43B24A26224C30DF00C532A9 /* roundtextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = roundtextView.swift; path = ../../Dean/View/roundtextView.swift; sourceTree = "<group>"; };
+		43B24A28224C41DD00C532A9 /* outputvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = outputvc.swift; sourceTree = "<group>"; };
+		43B24A2B224C4DF200C532A9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6155EF8979534295B12AFB20 /* Pods_CodeX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B9B97A75AA4A86FE78AEC59 /* Pods-CodeX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodeX/Pods-CodeX.debug.xcconfig"; sourceTree = "<group>"; };
+		ACE71A9D33B96D3E448FA911 /* Pods-CodeX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeX.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodeX/Pods-CodeX.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +45,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C49F473D94403E37DBB0F933 /* Pods_CodeX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14CF415BE75F42FBF57A4698 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B9B97A75AA4A86FE78AEC59 /* Pods-CodeX.debug.xcconfig */,
+				ACE71A9D33B96D3E448FA911 /* Pods-CodeX.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		434E2D12224FFF5E0062E163 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		43B24A01224BFD6200C532A9 = {
 			isa = PBXGroup;
 			children = (
+				434E2D12224FFF5E0062E163 /* Service */,
+				43B24A2A224C4DD700C532A9 /* constant */,
+				43B24A21224C002B00C532A9 /* ViewController */,
 				43B24A0C224BFD6200C532A9 /* CodeX */,
 				43B24A0B224BFD6200C532A9 /* Products */,
+				14CF415BE75F42FBF57A4698 /* Pods */,
+				A4839BEC4284C576F11D4DE2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +93,9 @@
 			isa = PBXGroup;
 			children = (
 				43B24A0D224BFD6200C532A9 /* AppDelegate.swift */,
+				43B24A1F224BFFEE00C532A9 /* GradientView.swift */,
+				43B24A24224C2CC100C532A9 /* RoundedButton.swift */,
+				43B24A26224C30DF00C532A9 /* roundtextView.swift */,
 				43B24A0F224BFD6200C532A9 /* ViewController.swift */,
 				43B24A11224BFD6200C532A9 /* Main.storyboard */,
 				43B24A14224BFD6700C532A9 /* Assets.xcassets */,
@@ -64,6 +105,31 @@
 			path = CodeX;
 			sourceTree = "<group>";
 		};
+		43B24A21224C002B00C532A9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				43B24A22224C005200C532A9 /* CodeVC.swift */,
+				43B24A28224C41DD00C532A9 /* outputvc.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		43B24A2A224C4DD700C532A9 /* constant */ = {
+			isa = PBXGroup;
+			children = (
+				43B24A2B224C4DF200C532A9 /* Constants.swift */,
+			);
+			path = constant;
+			sourceTree = "<group>";
+		};
+		A4839BEC4284C576F11D4DE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6155EF8979534295B12AFB20 /* Pods_CodeX.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +137,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43B24A1C224BFD6700C532A9 /* Build configuration list for PBXNativeTarget "CodeX" */;
 			buildPhases = (
+				FEA4A1A25743E781A1E46D14 /* [CP] Check Pods Manifest.lock */,
 				43B24A06224BFD6200C532A9 /* Sources */,
 				43B24A07224BFD6200C532A9 /* Frameworks */,
 				43B24A08224BFD6200C532A9 /* Resources */,
+				1AA259EE738E3D0A399FF6E6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +198,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1AA259EE738E3D0A399FF6E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CodeX/Pods-CodeX-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CodeX/Pods-CodeX-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEA4A1A25743E781A1E46D14 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CodeX-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		43B24A06224BFD6200C532A9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				43B24A10224BFD6200C532A9 /* ViewController.swift in Sources */,
+				43B24A25224C2CC100C532A9 /* RoundedButton.swift in Sources */,
+				43B24A27224C30DF00C532A9 /* roundtextView.swift in Sources */,
+				43B24A29224C41DD00C532A9 /* outputvc.swift in Sources */,
 				43B24A0E224BFD6200C532A9 /* AppDelegate.swift in Sources */,
+				43B24A20224BFFEE00C532A9 /* GradientView.swift in Sources */,
+				43B24A23224C005200C532A9 /* CodeVC.swift in Sources */,
+				43B24A2C224C4DF200C532A9 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,11 +411,13 @@
 		};
 		43B24A1D224BFD6700C532A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B9B97A75AA4A86FE78AEC59 /* Pods-CodeX.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A7AGCJK7WT;
 				INFOPLIST_FILE = CodeX/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -292,17 +425,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sathyabama.CodeX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
 		43B24A1E224BFD6700C532A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACE71A9D33B96D3E448FA911 /* Pods-CodeX.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A7AGCJK7WT;
 				INFOPLIST_FILE = CodeX/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +445,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sathyabama.CodeX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
