@@ -64,7 +64,7 @@ class CodeVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UI
                                         "name": "main.py",
                                         "content": "print(42)"]
             ]]
-        Alamofire.request(run , method: .post, parameters: body, encoding: JSONEncoding.default, headers: Head)
+        //Alamofire.request(run , method: .post, parameters: body, encoding: JSONEncoding.default, headers: Head)
          performSegue(withIdentifier: "tooutputscreen", sender: nil)
     }
     @IBAction func proceedbtnpressed(_ sender: Any) {
