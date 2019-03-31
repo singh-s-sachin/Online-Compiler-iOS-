@@ -10,7 +10,7 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 class CodeVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate{
-
+    public var Outputvc: outputvc?
     @IBOutlet weak var Selectlang: UITextField!
     @IBOutlet weak var dropdown: UIPickerView!
     @IBOutlet weak var workspace: UILabel!
@@ -50,21 +50,17 @@ class CodeVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UI
     }
     func textFieldDidBeginEditing(_ textField: UITextField) {
         if textField == self.Selectlang{
-            k = Selectlang.text ?? "/C"
+            k = Selectlang.text ?? "C"
             textField.endEditing(true)
         }
         
     }
     func output()
     {
-        let body: [String : Any ] = ["language": "python",
-                                     "title": "test",
-                                     "public": false,
-                                     "files":[[
-                                        "name": "main.py",
-                                        "content": "print(42)"]
-            ]]
-        //Alamofire.request(run , method: .post, parameters: body, encoding: JSONEncoding.default, headers: Head)
+        var dept = "n=5;cout<<n;return 0;}"
+        var h = Codemanager.instance.compile_snippet(inputs : inputval.text, language: k, content: dept )
+        //Codemanager.instance.runcode(content: "print(42)")
+        Outputvc?.outputdata(value: h)
          performSegue(withIdentifier: "tooutputscreen", sender: nil)
     }
     @IBAction func proceedbtnpressed(_ sender: Any) {

@@ -9,11 +9,15 @@
 import UIKit
 
 class outputvc: UIViewController {
-
+    @IBOutlet weak var printoutput: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        printoutput.text = outputcode        // Do any additional setup after loading the view.
+    }
+    public func outputdata(value : String)
+    {
+        printoutput.text = outputcode
     }
     @IBAction func closebtnpressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)

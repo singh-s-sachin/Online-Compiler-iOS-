@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		434E2D18225087170062E163 /* Codemanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434E2D17225087170062E163 /* Codemanager.swift */; };
 		43B24A0E224BFD6200C532A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B24A0D224BFD6200C532A9 /* AppDelegate.swift */; };
 		43B24A10224BFD6200C532A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B24A0F224BFD6200C532A9 /* ViewController.swift */; };
 		43B24A13224BFD6200C532A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43B24A11224BFD6200C532A9 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		434E2D17225087170062E163 /* Codemanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codemanager.swift; sourceTree = "<group>"; };
 		43B24A0A224BFD6200C532A9 /* CodeX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43B24A0D224BFD6200C532A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43B24A0F224BFD6200C532A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 		434E2D12224FFF5E0062E163 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				434E2D17225087170062E163 /* Codemanager.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -71,9 +74,6 @@
 		43B24A01224BFD6200C532A9 = {
 			isa = PBXGroup;
 			children = (
-				434E2D12224FFF5E0062E163 /* Service */,
-				43B24A2A224C4DD700C532A9 /* constant */,
-				43B24A21224C002B00C532A9 /* ViewController */,
 				43B24A0C224BFD6200C532A9 /* CodeX */,
 				43B24A0B224BFD6200C532A9 /* Products */,
 				14CF415BE75F42FBF57A4698 /* Pods */,
@@ -92,6 +92,9 @@
 		43B24A0C224BFD6200C532A9 /* CodeX */ = {
 			isa = PBXGroup;
 			children = (
+				434E2D12224FFF5E0062E163 /* Service */,
+				43B24A2A224C4DD700C532A9 /* constant */,
+				43B24A21224C002B00C532A9 /* ViewController */,
 				43B24A0D224BFD6200C532A9 /* AppDelegate.swift */,
 				43B24A1F224BFFEE00C532A9 /* GradientView.swift */,
 				43B24A24224C2CC100C532A9 /* RoundedButton.swift */,
@@ -267,6 +270,7 @@
 				43B24A0E224BFD6200C532A9 /* AppDelegate.swift in Sources */,
 				43B24A20224BFFEE00C532A9 /* GradientView.swift in Sources */,
 				43B24A23224C005200C532A9 /* CodeVC.swift in Sources */,
+				434E2D18225087170062E163 /* Codemanager.swift in Sources */,
 				43B24A2C224C4DF200C532A9 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
