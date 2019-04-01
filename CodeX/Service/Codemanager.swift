@@ -13,10 +13,6 @@ public var outputcode = "Running"
 class Codemanager {
     static let instance = Codemanager()
     func compile_snippet(inputs : String,language : String, content: String) -> String{
-        /*let headers = [
-            "X-RapidAPI-Key": "4557241795msh8251a31d6146c22p14af94jsnaeb5931d2c0d",
-            "Content-Type": "application/x-www-form-urlencoded"
-        ]*/
         let headers : [String : String] = [
             "Content-type": "application/json",
             "Authorization":"Token f49f383b-0710-494c-ad79-76cdf3970c53"
