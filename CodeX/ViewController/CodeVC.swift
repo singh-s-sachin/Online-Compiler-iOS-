@@ -22,7 +22,7 @@ class CodeVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UI
     @IBOutlet weak var compile: RoundedButton!
     @IBOutlet weak var BACK: UIButton!
     var k = "C"
-    var list = [String](arrayLiteral: "C","C++","Java","NodeJS","Python","Go","Swift")
+    var list = [String](arrayLiteral: "c","cpp","java","go","python","kotlin","swift","typescript")
     let thePicker = UIPickerView()
     
     override func viewDidLoad() {
@@ -47,10 +47,10 @@ class CodeVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UI
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         Selectlang.text = list[row]
+        k = Selectlang.text!
     }
     func textFieldDidBeginEditing(_ textField: UITextField) {
         if textField == self.Selectlang{
-            k = Selectlang.text ?? "C"
             textField.endEditing(true)
         }
         
@@ -58,7 +58,7 @@ class CodeVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UI
     func output()
     {
         var dept = "n=5;cout<<n;return 0;}"
-        var h = Codemanager.instance.compile_snippet(inputs : inputval.text, language: k, content: dept )
+        var h = Codemanager.instance.compile_snippet(inputs : inputval.text, language: k, content: program.text )
         //Codemanager.instance.runcode(content: "print(42)")
         Outputvc?.outputdata(value: h)
          performSegue(withIdentifier: "tooutputscreen", sender: nil)

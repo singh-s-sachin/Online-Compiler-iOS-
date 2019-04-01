@@ -9,11 +9,15 @@
 import UIKit
 
 class outputvc: UIViewController {
-    @IBOutlet weak var printoutput: UILabel!
+    
+    @IBOutlet weak var printoutput: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         printoutput.text = outputcode        // Do any additional setup after loading the view.
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        
     }
     public func outputdata(value : String)
     {
